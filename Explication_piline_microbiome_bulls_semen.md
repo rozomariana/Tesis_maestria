@@ -3,6 +3,11 @@
 > *This project was done on Purdue University's computing clusters. Therefore, some parts of code may not pertain to your local machine.*
 
 ---
+### Fuente: Raw sequence and Articule
+Data is available in the National Center for Biotechnology Information (NCBI) Sequence Read Archive (SRA), Bioproject: PRJNA747921, Biosamples SAMN20300345- SAMN20300393. For purposes of reproducibility, all commands used in QIIME2 are available at 
+[Link articule]("https://doi.org/10.1016/j.theriogenology.2022.01.029")
+[Link scribs]("https://github.com/sheets27/16SrRNABullSemen")   
+[Video]("https://youtu.be/M2iXewkYHE0?si=jhXIO4VN-7luI1nb")
 
 ### Introducción al Software
 El software utilizado en este estudio es **QIIME 2** (*Quantitative Insights Into Microbial Ecology*), el cual no es una aplicación convencional con botones, sino un **ecosistema bioinformático de código abierto** diseñado para analizar datos de secuenciación masiva. Está desarrollado principalmente en el lenguaje de programación **Python** y se basa en una **arquitectura de plugins**, lo que le permite integrar herramientas externas muy potentes bajo una misma lógica de trabajo. 

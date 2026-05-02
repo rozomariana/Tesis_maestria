@@ -38,13 +38,6 @@ Para la mayoría de estudios de microbiota, secuenciar 2 regiones hipervariables
 ## 7. Un poco de historia
 Fue **Carl Woese** en 1977 quien descubrió la utilidad de este gen. Gracias a él, nos dimos cuenta de que la vida no se dividía solo en "plantas y animales", sino en tres dominios (**Bacteria, Archaea y Eukarya**), revolucionando la microbiología para siempre.
 
-
-# Apuntes Técnicos: Normalización de ADN con SequalPrep™
-
-### ¿Qué es la Placa de Normalización SequalPrep?
-Es una herramienta de laboratorio diseñada para **estandarizar la cantidad de ADN** en múltiples muestras simultáneamente. Se utiliza típicamente después de una PCR (como la de la región *V4*) y antes de meter las muestras al secuenciador *Illumina*.
-
----
 # Apuntes: Lógica de los 500 Ciclos y Región V4
 
 ### ¿Por qué usar 500 ciclos para una región de ~250 pb?
@@ -68,6 +61,13 @@ Es importante entender que aunque la máquina hace 500 ciclos de lectura, **la s
 
 > **En síntesis:** Los 500 ciclos permiten "leer dos veces" el mismo código de barras de 250 pb para garantizar que la información obtenida sea biológicamente real y libre de errores técnicos.
 
+
+# Apuntes Técnicos: Normalización de ADN con SequalPrep™
+
+### ¿Qué es la Placa de Normalización SequalPrep?
+Es una herramienta de laboratorio diseñada para **estandarizar la cantidad de ADN** en múltiples muestras simultáneamente. Se utiliza típicamente después de una PCR (como la de la región *V4*) y antes de meter las muestras al secuenciador *Illumina*.
+
+---
 ### ¿Cómo funciona? (El proceso de "Captura por Saturación")
 
 *   **Paso 1: Unión (Binding)**  

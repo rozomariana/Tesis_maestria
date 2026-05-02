@@ -37,3 +37,43 @@ Para la mayoría de estudios de microbiota, secuenciar 2 regiones hipervariables
 
 ## 7. Un poco de historia
 Fue **Carl Woese** en 1977 quien descubrió la utilidad de este gen. Gracias a él, nos dimos cuenta de que la vida no se dividía solo en "plantas y animales", sino en tres dominios (**Bacteria, Archaea y Eukarya**), revolucionando la microbiología para siempre.
+
+
+# Apuntes Técnicos: Normalización de ADN con SequalPrep™
+
+### ¿Qué es la Placa de Normalización SequalPrep?
+Es una herramienta de laboratorio diseñada para **estandarizar la cantidad de ADN** en múltiples muestras simultáneamente. Se utiliza típicamente después de una PCR (como la de la región *V4*) y antes de meter las muestras al secuenciador *Illumina*.
+
+---
+
+### ¿Cómo funciona? (El proceso de "Captura por Saturación")
+
+*   **Paso 1: Unión (Binding)**  
+    Se añade el ADN amplificado a los pocillos de la placa. Estos pocillos están recubiertos con una **resina química especial**. Esta resina tiene un número de "asientos" o sitios de unión **limitados**.
+  
+*   **Paso 2: Saturación**  
+    Incluso si una muestra tiene *mucho* ADN y otra tiene *poco*, la resina solo atrapará una cantidad fija (ej. ~15 ng). El exceso de ADN queda flotando porque ya no hay "asientos" disponibles.
+
+*   **Paso 3: Lavado**  
+    Se eliminan los restos de reactivos y el ADN sobrante que no se pegó a la placa. Solo queda el ADN que está unido a la resina.
+
+*   **Paso 4: Elución**  
+    Se añade un buffer (líquido de recuperación) que "despega" el ADN de la resina. 
+
+> **Resultado final:** Al terminar, todas tus muestras tienen la **misma concentración**, listas para mezclarse en un solo tubo (*pooling*).
+
+---
+
+### ¿Para qué se hace? (Importancia en Secuenciación)
+
+1.  **Representación Equitativa:** Asegura que todas las muestras tengan el mismo número de lecturas en el *MiSeq*. Sin esto, las muestras más concentradas "se comerían" todo el espacio de secuenciación, dejando a las otras sin datos.
+2.  **Optimización de Costos:** Evita perder dinero en una corrida de secuenciación donde solo unas pocas muestras se lean bien.
+3.  **Ahorro de Trabajo Manual:** Sustituye el proceso tedioso de medir cada muestra individualmente en un fluorómetro (como *Qubit*) y diluirlas una a una con pipeta.
+4.  **Consistencia Bioinformática:** Facilita el análisis posterior, ya que la profundidad de lectura será similar entre todos los individuos o tratamientos del experimento.
+
+---
+
+### Conceptos Clave
+*   *Normalización:* Proceso de ajustar todas las muestras a una concentración común.
+*   *Saturación de superficie:* Principio físico-químico donde la placa deja de capturar ADN una vez se llenan sus sitios de unión.
+*   *Pooling:* Mezclar las muestras normalizadas en un solo volumen final.
